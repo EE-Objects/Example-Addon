@@ -1,0 +1,29 @@
+{
+  "name": "ee-objects/ee_addon",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Eric Lamb",
+      "email": "eric@mithra62.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ee-objects/core": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "EeObjects\\Addon\\": "src"
+    },
+    "classmap": [
+      "."
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": {
+      "*": "dist"
+    }
+  }
+}

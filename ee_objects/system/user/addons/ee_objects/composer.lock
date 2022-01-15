@@ -1,0 +1,64 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "33dc3486aec6b65fd675d6ddc393f081",
+    "packages": [
+        {
+            "name": "ee-objects/core",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EE-Objects/Core.git",
+                "reference": "d863fff070cca87817f5f8fafda0825a7db7654d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EE-Objects/Core/zipball/d863fff070cca87817f5f8fafda0825a7db7654d",
+                "reference": "d863fff070cca87817f5f8fafda0825a7db7654d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EeObjects\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Lamb",
+                    "email": "eric@mithra62.com"
+                }
+            ],
+            "description": "A set of generics and primitives for ExpressionEngine development",
+            "support": {
+                "issues": "https://github.com/EE-Objects/Core/issues",
+                "source": "https://github.com/EE-Objects/Core/tree/main"
+            },
+            "time": "2022-01-15T18:27:07+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "ee-objects/core": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.4"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
