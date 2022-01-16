@@ -4,8 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33dc3486aec6b65fd675d6ddc393f081",
+    "content-hash": "1fbe65e31569a2891c2460116f56a3cd",
     "packages": [
+        {
+            "name": "ee-objects/controllers",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EE-Objects/Controllers.git",
+                "reference": "f95e480f55968d9a65a28b1edf027577a5b67ca4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EE-Objects/Controllers/zipball/f95e480f55968d9a65a28b1edf027577a5b67ca4",
+                "reference": "f95e480f55968d9a65a28b1edf027577a5b67ca4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EeObjects\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Lamb",
+                    "email": "eric@mithra62.com"
+                }
+            ],
+            "description": "Provides an abstraction to creating Control Panel Controllers and Routes",
+            "support": {
+                "issues": "https://github.com/EE-Objects/Controllers/issues",
+                "source": "https://github.com/EE-Objects/Controllers/tree/develop"
+            },
+            "time": "2022-01-15T19:19:45+00:00"
+        },
         {
             "name": "ee-objects/core",
             "version": "dev-main",
@@ -46,13 +87,99 @@
                 "source": "https://github.com/EE-Objects/Core/tree/main"
             },
             "time": "2022-01-15T18:27:07+00:00"
+        },
+        {
+            "name": "ee-objects/entries",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EE-Objects/Entries.git",
+                "reference": "9f99a14a1058e8d2cc57f53f15dc8559bd23bb6b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EE-Objects/Entries/zipball/9f99a14a1058e8d2cc57f53f15dc8559bd23bb6b",
+                "reference": "9f99a14a1058e8d2cc57f53f15dc8559bd23bb6b",
+                "shasum": ""
+            },
+            "require": {
+                "ee-objects/core": "dev-main",
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EeObjects\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Lamb",
+                    "email": "eric@mithra62.com"
+                }
+            ],
+            "description": "Provides an object based approach to ExpressionEngine Channel Entries",
+            "support": {
+                "issues": "https://github.com/EE-Objects/Entries/issues",
+                "source": "https://github.com/EE-Objects/Entries/tree/main"
+            },
+            "time": "2022-01-15T23:31:38+00:00"
+        },
+        {
+            "name": "ee-objects/members",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EE-Objects/Members.git",
+                "reference": "788caa596cd624950d43cbb90032a17d27b7b611"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EE-Objects/Members/zipball/788caa596cd624950d43cbb90032a17d27b7b611",
+                "reference": "788caa596cd624950d43cbb90032a17d27b7b611",
+                "shasum": ""
+            },
+            "require": {
+                "ee-objects/core": "dev-main",
+                "php": ">=7.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EeObjects\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric Lamb",
+                    "email": "eric@mithra62.com"
+                }
+            ],
+            "description": "Provides an object based approach to ExpressionEngine Channel Entries",
+            "support": {
+                "issues": "https://github.com/EE-Objects/Members/issues",
+                "source": "https://github.com/EE-Objects/Members/tree/main"
+            },
+            "time": "2022-01-15T23:30:40+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ee-objects/core": 20
+        "ee-objects/entries": 20,
+        "ee-objects/members": 20,
+        "ee-objects/controllers": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

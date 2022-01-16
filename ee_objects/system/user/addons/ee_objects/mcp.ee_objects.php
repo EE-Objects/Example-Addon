@@ -4,18 +4,23 @@ if (! defined('BASEPATH')) {
     exit('No direct script access allowed');
 }
 
-class Ee_objects_mcp
+use EeObjects\Controllers\Cp;
+
+class Ee_objects_mcp extends Cp
 {
+    public function __construct()
+    {
+        $this->setRouteNamespace('EeObjects\Addon\Routes');
+    }
+
     public function index()
     {
-        $html = '<p>Time to make magic</p>';
-
-        return [
-            'body'  => $html,
-            'breadcrumb' => [
-                ee('CP/URL')->make('addons/settings/ee_objects')->compile() => lang('ee_objects')
-            ],
-            'heading' => lang('ee_objects_settings'),
-        ];
+        return $this->route('index', func_get_args());
     }
+
+    public function testRoute()
+    {
+        return $this->route('test-route', func_get_args());
+    }
+
 }
