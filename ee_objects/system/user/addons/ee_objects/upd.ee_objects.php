@@ -11,6 +11,23 @@ class Ee_objects_upd extends Installer
     public $has_cp_backend = 'n';
     public $has_publish_fields = 'n';
 
+    /**
+     * Module Actions
+     * @var array
+     */
+    public $actions = [
+        [
+            'class' => 'Ee_objects',
+            'method' => 'my_action',
+            'csrf_exempt' => true
+        ],
+        [
+            'class' => 'Ee_objects',
+            'method' => 'another_action',
+            'csrf_exempt' => true
+        ]
+    ];
+
     public function install()
     {
         parent::install();

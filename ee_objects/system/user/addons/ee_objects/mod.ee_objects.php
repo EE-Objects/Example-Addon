@@ -4,7 +4,4 @@ if (! defined('BASEPATH')) {
     exit('No direct script access allowed');
 }
 
-class Ee_objects
-{
-    // Make magic, my friend
-}
+class_alias('EeObjects\Addon\Module', 'Ee_objects');

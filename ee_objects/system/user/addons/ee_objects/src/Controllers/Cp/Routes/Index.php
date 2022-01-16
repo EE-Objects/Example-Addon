@@ -1,5 +1,5 @@
 <?php
-namespace EeObjects\Addon\Routes;
+namespace EeObjects\Addon\Controllers\Cp\Routes;
 
 use EeObjects\Controllers\Cp\AbstractRoute;
 
