@@ -1,15 +1,15 @@
 <?php
-namespace EeObjects\Addon\Routes\TestRoute;
+namespace EeObjects\Addon\Controllers\Cp\Routes\TestRoute;
 
-use EeObjects\Controllers\Cp\AbstractRoute;
+use EeObjects\Addon\Controllers\Cp\AbstractRoute;
 
 class MyAction extends AbstractRoute
 {
     protected $module_name = 'ee_objects';
 
-    public function process(): AbstractRoute
+    public function process($id = false): AbstractRoute
     {
-        $this->setBody('my-action', []);
+        $this->setBody('test-route/my-action', []);
         $this->setHeading('Test Of System');
 
         $this->addBreadcrumb($this->url('index'), 'test-breadcrumb');

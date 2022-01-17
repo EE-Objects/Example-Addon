@@ -23,5 +23,8 @@ return [
         'MembersService' => function ($addon) {
             return new MembersService();
         },
+    ],
+    'tests' => [
+        'path' => 'vendor/ee-objects',
     ]
 ];

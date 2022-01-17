@@ -1,14 +1,16 @@
 <?php
 namespace EeObjects\Addon\Controllers\Cp\Routes;
 
-use EeObjects\Controllers\Cp\AbstractRoute;
+use EeObjects\Addon\Controllers\Cp\AbstractRoute;
 
 class Index extends AbstractRoute
 {
     protected $module_name = 'ee_objects';
 
-    public function process(): AbstractRoute
+    public function process($id = false): AbstractRoute
     {
+        $this->setHeading('Test Index Page');
+        $this->setBody('index', []);
         return $this;
     }
 }

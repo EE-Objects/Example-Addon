@@ -8,7 +8,7 @@ class Members extends AbstractRoute
 {
     protected $module_name = 'ee_objects';
 
-    public function process(): AbstractRoute
+    public function process($id = false): AbstractRoute
     {
         $member_id = ee()->session->userdata('member_id');
         $member = ee('ee_objects:MembersService')->getMember($member_id);

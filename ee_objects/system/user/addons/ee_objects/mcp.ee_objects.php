@@ -8,6 +8,8 @@ use EeObjects\Controllers\Cp;
 
 class Ee_objects_mcp extends Cp
 {
+    protected $module_name = 'ee_objects';
+
     public function __construct()
     {
         $this->setRouteNamespace('EeObjects\Addon\Controllers\Cp\Routes');
