@@ -5,15 +5,38 @@ use EeObjects\Controllers\Cp\AbstractRoute As CpRoute;
 
 abstract class AbstractRoute extends CpRoute
 {
+    protected $module_name = 'ee_objects';
+
+    protected $sidebar_data = [
+        'eo.cp.nav.controller.examples' => [
+            'path' => 'controllers-examples',
+            'list' => [
+                'cp' => 'controllers-examples/cp',
+                'module' => 'controllers-examples/mod',
+            ]
+        ],
+        'eo.cp.nav.forms' => [
+            'path' => '',
+            'list' => [
+                'eo.cp.nav.example' => 'forms/example'
+            ]
+        ],
+        'eo.cp.nav.members' => [
+            'path' => '',
+            'list' => [
+                'eo.cp.nav.example' => 'members/example'
+            ]
+        ],
+        'eo.cp.nav.entries' => [
+            'path' => '',
+            'list' => [
+                'eo.cp.nav.example' => 'entries/example'
+            ]
+        ]
+    ];
+
     public function __construct()
     {
         parent::__construct();
-        $this->sidebar = ee('CP/Sidebar')->make();
-
-        $subsHeader = $this->sidebar
-            ->addHeader(lang('eo.cp.nav.controller.examples'), $this->url('index'));
-        $subsHeaderList = $subsHeader->addBasicList();
-        $subsHeaderList->addItem(lang('eo.cp.nav.members'), $this->url('members'));
-        $subsHeaderList->addItem(lang('eo.cp.nav.test-route.my-action'), $this->url('test-route/my-action'));
     }
 }

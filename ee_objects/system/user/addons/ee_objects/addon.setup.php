@@ -12,7 +12,7 @@ return [
     'author_url'        => '',
     'name'              => 'EE Objects',
     'description'       => 'test bed for EE Objects',
-    'version'           => '0.0.1',
+    'version'           => '0.1.0',
     'namespace'         => 'EricLamb\EeObjects',
     'settings_exist'    => true,
     // Advanced settings

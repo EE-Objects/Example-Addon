@@ -5,12 +5,13 @@ use EeObjects\Addon\Controllers\Cp\AbstractRoute;
 
 class Index extends AbstractRoute
 {
-    protected $module_name = 'ee_objects';
+    /**
+     * @var string
+     */
+    protected $route_path = 'index';
 
     public function process($id = false): AbstractRoute
     {
-        $this->setHeading('Test Index Page');
-        $this->setBody('index', []);
         return $this;
     }
 }

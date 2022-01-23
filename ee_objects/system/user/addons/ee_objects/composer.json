@@ -8,7 +8,7 @@
     }
   ],
   "require": {
-    "php": ">=7.4",
+    "php": ">=7.1",
     "ee-objects/entries": "dev-main",
     "ee-objects/members": "dev-main",
     "ee-objects/controllers": "dev-main"

@@ -12,7 +12,7 @@ class Ee_objects_mcp extends Cp
 
     public function __construct()
     {
-        $this->setRouteNamespace('EeObjects\Addon\Controllers\Cp\Routes');
+        $this->setRouteNamespace('EeObjects\Addon\Controllers');
     }
 
     public function index()
