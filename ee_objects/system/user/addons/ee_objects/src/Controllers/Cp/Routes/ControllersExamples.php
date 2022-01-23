@@ -12,6 +12,8 @@ class ControllersExamples extends AbstractRoute
 
     public function process($id = false): AbstractRoute
     {
+        $this->setHeading('controllers-examples');
+        $this->addBreadcrumb($this->url('controllers-examples'), 'eo.cp.nav.controller.examples');
         return $this;
     }
 }
