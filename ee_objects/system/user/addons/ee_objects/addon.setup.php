@@ -2,6 +2,7 @@
 
 use EeObjects\Services\DateService;
 use EeObjects\Services\MembersService;
+use EeObjects\Services\ChannelEntryService;
 
 if (defined('PATH_THIRD')) {
     require_once PATH_THIRD. 'ee_objects/vendor/autoload.php';
@@ -22,6 +23,9 @@ return [
         },
         'MembersService' => function ($addon) {
             return new MembersService();
+        },
+        'ChannelEntryService' => function ($addon) {
+            return new ChannelEntryService();
         },
     ],
     'tests' => [

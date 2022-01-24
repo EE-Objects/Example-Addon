@@ -29,4 +29,9 @@ class Ee_objects_mcp extends Cp
     {
         return $this->route('members', func_get_args());
     }
+
+    public function entries()
+    {
+        return $this->route('entries', func_get_args());
+    }
 }

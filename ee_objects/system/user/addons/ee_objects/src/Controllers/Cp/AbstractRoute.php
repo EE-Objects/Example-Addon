@@ -24,13 +24,13 @@ abstract class AbstractRoute extends CpRoute
         'eo.cp.nav.members' => [
             'path' => '',
             'list' => [
-                'eo.cp.nav.example' => 'members/example'
+                'eo.cp.nav.example' => 'members'
             ]
         ],
         'eo.cp.nav.entries' => [
             'path' => '',
             'list' => [
-                'eo.cp.nav.example' => 'entries/example'
+                'eo.cp.nav.example' => 'entries'
             ]
         ]
     ];
