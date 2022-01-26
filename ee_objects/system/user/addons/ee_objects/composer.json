@@ -9,9 +9,10 @@
   ],
   "require": {
     "php": ">=7.1",
-    "ee-objects/entries": "dev-main",
-    "ee-objects/members": "dev-main",
-    "ee-objects/controllers": "dev-main"
+    "ee-objects/entries": "^0.2",
+    "ee-objects/members": "^0.2",
+    "ee-objects/controllers": "^0.2",
+    "ee-objects/forms": "^0.2"
   },
   "autoload": {
     "psr-4": {
