@@ -12,10 +12,15 @@ class Entries extends AbstractRoute
 
     public function process($id = false): AbstractRoute
     {
-$entry = ee('ee_objects:ChannelEntryService')->getEntry(5079);
-if ($entry instanceof Entry) {
+        $entry = ee('ee_objects:ChannelEntryService')->getEntry(5079);
+        if ($entry instanceof Entry) {
 
-}
+            $result = $entry->validate();
+            if(!$result->isValid()) {
+                //print_r($result);
+                //exit;
+            }
+        }
 
         $this->setHeading('eo.cp.nav.entries');
         $this->addBreadcrumb($this->url('controllers-examples'), 'eo.cp.nav.entries');

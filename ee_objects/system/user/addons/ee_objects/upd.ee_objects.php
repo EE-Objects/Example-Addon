@@ -28,9 +28,18 @@ class Ee_objects_upd extends Installer
         ]
     ];
 
+    public $methods = [
+        [
+            'method' => 'core_boot',
+            'hook' => 'core_boot',
+            'priority' => '1',
+        ],
+    ];
+
     public function install()
     {
         parent::install();
+        parent::activate_extension();
 
         return true;
     }
@@ -46,6 +55,7 @@ class Ee_objects_upd extends Installer
     public function uninstall()
     {
         parent::uninstall();
+        parent::disable_extension();
 
         return true;
     }

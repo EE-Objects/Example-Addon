@@ -15,8 +15,14 @@ class Members extends AbstractRoute
         $member_id = ee()->session->userdata('member_id');
         $member = ee('ee_objects:MembersService')->getMember($member_id);
         if ($member instanceof Member) {
-            //print_r($member->toArray());
-            //exit;
+
+            $member->get('first_name');
+            $result = $member->validate();
+            if($result->isValid()) {
+                //print_r($result);
+                //exit;
+            }
+
         }
 
         $this->setHeading('eo.cp.nav.members');
