@@ -9,10 +9,11 @@
   ],
   "require": {
     "php": ">=7.1",
-    "ee-objects/entries": "^0.2",
-    "ee-objects/members": "^0.2",
-    "ee-objects/controllers": "^0.2",
-    "ee-objects/forms": "^0.2"
+    "ee-objects/entries": "^0.3",
+    "ee-objects/members": "^0.3",
+    "ee-objects/controllers": "^0.3",
+    "ee-objects/forms": "^0.2",
+    "ee-objects/string": "^0.1"
   },
   "autoload": {
     "psr-4": {

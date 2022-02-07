@@ -34,6 +34,11 @@ class Ee_objects_upd extends Installer
             'hook' => 'core_boot',
             'priority' => '1',
         ],
+        [
+            'method' => 'template_post_parse',
+            'hook' => 'template_post_parse',
+            'priority' => '1',
+        ],
     ];
 
     public function install()

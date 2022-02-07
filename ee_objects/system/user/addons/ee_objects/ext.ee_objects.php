@@ -1,8 +1,11 @@
 <?php
-use ExpressionEngine\Service\Addon\Installer;
 
-class Ee_objects_ext extends Installer
+use EeObjects\Controllers\Extension;
+
+class Ee_objects_ext extends Extension
 {
+    protected $route_namespace = 'EeObjects\Addon\Controllers';
+
     public $name = 'Link Truncator';
     public $version = '1.0.0';
     public $description = 'Truncates long links';
@@ -39,13 +42,6 @@ class Ee_objects_ext extends Installer
             'text_setting' => array('i', '', $this->settings['text_setting']),
             'yes_or_no' => array('r', array('y' => "Yes", 'n' => "No"), $this->settings['yes_or_no']),
         );
-    }
-
-
-    public function core_boot()
-    {
-        echo 'hello';
-        exit;
     }
 
     // END
