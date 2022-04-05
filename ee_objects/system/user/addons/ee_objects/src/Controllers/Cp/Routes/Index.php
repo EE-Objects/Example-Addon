@@ -5,9 +5,6 @@ use EeObjects\Addon\Controllers\Cp\AbstractRoute;
 
 class Index extends AbstractRoute
 {
-    /**
-     * @var string
-     */
     protected $route_path = 'index';
 
     public function process($id = false): AbstractRoute

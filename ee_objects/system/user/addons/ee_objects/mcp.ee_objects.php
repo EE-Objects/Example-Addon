@@ -1,9 +1,5 @@
 <?php
 
-if (! defined('BASEPATH')) {
-    exit('No direct script access allowed');
-}
-
 use EeObjects\Controllers\Cp;
 
 class Ee_objects_mcp extends Cp
@@ -20,18 +16,33 @@ class Ee_objects_mcp extends Cp
         return $this->route('index', func_get_args());
     }
 
-    public function controllersExamples()
+    public function json()
     {
-        return $this->route('controllers-examples', func_get_args());
+
     }
 
-    public function members()
+    public function forms()
     {
-        return $this->route('members', func_get_args());
+        return $this->route('forms', func_get_args());
     }
 
-    public function entries()
+    protected function getForm()
     {
-        return $this->route('entries', func_get_args());
+        $filepicker = ee('CP/FilePicker')->make();
+        $link = $filepicker->getLink('Click me!');
+
+        return ['member_details' =>
+            [
+                [
+                    'fields' => [
+                        'FIELD_NAME' => [
+                            'type' => 'image',
+                            'id' => 'my-image-field',
+                            'image' => '',
+                        ],
+                    ]
+                ]
+            ]
+        ];
     }
 }
